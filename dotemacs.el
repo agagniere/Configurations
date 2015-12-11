@@ -6,7 +6,7 @@
 ;    by: thor <thor@42.fr>                           +#+  +:+       +#+         ;
 ;                                                  +#+#+#+#+#+   +#+            ;
 ;    Created: 2013/06/18 14:01:14 by thor               #+#    #+#              ;
-;    Updated: 2015/11/29 20:25:20 by angagnie         ###   ########.fr        ;
+;    Updated: 2015/12/11 12:43:18 by angagnie         ###   ########.fr        ;
 ;                                                                               ;
 ;*******************************************************************************;
 
@@ -38,7 +38,7 @@
 
 ; Set default emacs configuration
 (set-language-environment "UTF-8")
-(setq-default font-lock-global-modes nil)
+;(setq-default font-lock-global-modes nil)
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
 (global-set-key (kbd "DEL") 'backward-delete-char)
@@ -110,6 +110,18 @@
  (move-end-of-line 1)
  )
 (global-set-key [f8] 'main_minimum1)
+
+(defun comment-template()
+ "EZ comment"
+ (interactive)
+ (insert
+  "/*
+**
+*/")
+ (previous-line 1)
+ (move-end-of-line 1)
+ )
+(global-set-key [f7] 'comment-template)
 
 (defun php-debug-func()
   "php-debug-func"

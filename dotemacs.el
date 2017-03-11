@@ -6,7 +6,7 @@
 ;    by: thor <thor@42.fr>                           +#+  +:+       +#+         ;
 ;                                                  +#+#+#+#+#+   +#+            ;
 ;    Created: 2013/06/18 14:01:14 by thor               #+#    #+#              ;
-;    Updated: 2015/12/11 12:43:18 by angagnie         ###   ########.fr        ;
+;    Updated: 2017/02/07 18:00:24 by angagnie         ###   ########.fr        ;
 ;                                                                               ;
 ;*******************************************************************************;
 
@@ -122,6 +122,18 @@
  (move-end-of-line 1)
  )
 (global-set-key [f7] 'comment-template)
+
+(defun comment-template2()
+ "EZ comment 2"
+ (interactive)
+ (insert
+  "/*
+** -----=====    =====-----
+*/")
+ (previous-line 1)
+ (move-end-of-line 1)
+ )
+(global-set-key [f6] 'comment-template2)
 
 (defun php-debug-func()
   "php-debug-func"

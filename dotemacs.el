@@ -14,11 +14,6 @@
 (setq config_files "/usr/share/emacs/site-lisp/")
 (setq load-path (append (list nil config_files) load-path))
 
-(load "list.el")
-(load "string.el")
-(load "comments.el")
-(load "header.el")
-
 (defun toggle-comment-on-line ()
   "comment or uncomment current line"
   (interactive)

@@ -1,6 +1,6 @@
 ﻿---
 BasedOnStyle: Microsoft
-AlignAfterOpenBracket: Align
+AlignAfterOpenBracket: 'Align'
 AlignConsecutiveMacros: 'true'
 AlignConsecutiveAssignments: 'true'
 AlignConsecutiveDeclarations: 'true'
@@ -24,7 +24,7 @@ CompactNamespaces: 'true'
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
 ContinuationIndentWidth: '0'
 Cpp11BracedListStyle: 'true'
-DerivePointerAlignment: 'true'
+DerivePointerAlignment: 'false'
 FixNamespaceComments: 'true'
 IncludeBlocks: Regroup
 IndentCaseLabels: 'false'
@@ -35,14 +35,14 @@ KeepEmptyLinesAtTheStartOfBlocks: 'false'
 Language: Cpp
 MaxEmptyLinesToKeep: '1'
 NamespaceIndentation: None
-PenaltyBreakAssignment: '40'
-PenaltyBreakBeforeFirstCallParameter: '20'
+PenaltyBreakAssignment: '20'
+PenaltyBreakBeforeFirstCallParameter: '40'
 PenaltyBreakComment: '10'
-PenaltyBreakFirstLessLess: '40'
+PenaltyBreakFirstLessLess: '15'
 PenaltyBreakString: '30'
 PenaltyExcessCharacter: '1'
-PenaltyReturnTypeOnItsOwnLine: '20'
-PointerAlignment: Left
+PenaltyReturnTypeOnItsOwnLine: '15'
+PointerAlignment: 'Left'
 ReflowComments: 'true'
 SortIncludes: 'true'
 SortUsingDeclarations: 'true'

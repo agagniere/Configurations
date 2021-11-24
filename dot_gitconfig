@@ -1,0 +1,4 @@
+[core]
+	editor = emacs -nw
+[alias]
+	adog = log --all --decorate --oneline --graph

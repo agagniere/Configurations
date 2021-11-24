@@ -9,9 +9,7 @@ alias cleantex="find . \( -name '*.aux' -o -name '*.idx' -o -name '*.ilg' -o -na
 alias gits="git status"
 alias gitd="git diff"
 alias gitdc="git diff --cached"
-alias gitl="git log --one-line"
 
 alias e="emacs -nw"
 alias wai="clear ; echo ; pwd ; echo ; ls"
-alias src="source ~/.zshrc"
 alias update="sudo apt update && sudo apt upgrade && sudo apt autoclean && sudo apt autoremove"

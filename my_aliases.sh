@@ -9,6 +9,7 @@ alias cleantex="find . \( -name '*.aux' -o -name '*.idx' -o -name '*.ilg' -o -na
 alias gits="git status"
 alias gitd="git diff"
 alias gitdc="git diff --cached"
+alias gitf='for file in $(git ls-files --modified); do echo $file ; clang-format-9 -i $file ; done'
 
 alias e="emacs -nw"
 alias wai="clear ; echo ; pwd ; echo ; ls"

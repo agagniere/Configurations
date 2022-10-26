@@ -1,4 +1,16 @@
+[user]
+	name = Antoine
+	email = angagnie@student.42.fr
+	username = agagniere
 [core]
 	editor = emacs -nw
+	autocrlf = input
+	pager = less -x1,5
+[help]
+	autocorrect = 4
+[merge]
+	tool = emerge
 [alias]
 	adog = log --all --decorate --oneline --graph
+[push]
+	default = simple

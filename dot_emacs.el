@@ -11,7 +11,7 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(load "/usr/share/emacs/site-lisp/clang-format-9/clang-format.el")
+(load "/opt/homebrew/share/clang/clang-format.el")
 (global-set-key (kbd "<f1>") 'clang-format-region)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

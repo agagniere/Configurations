@@ -9,3 +9,6 @@ compinit
 # Pyenv
 PYENV_ROOT="~/.pyenv"
 eval "$(pyenv init -)"
+
+# TeX Live
+PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin/tlmgr"

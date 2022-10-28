@@ -3,6 +3,7 @@ Language: Cpp
 Standard: Cpp11
 # BasedOnStyle: Chromium
 
+# ----- Tabs -----
 TabWidth: '4'
 UseTab: ForIndentation
 IndentCaseLabels: 'false'
@@ -10,7 +11,8 @@ IndentPPDirectives: AfterHash
 IndentWidth: '4'
 IndentWrappedFunctionNames: 'false'
 
-ColumnLimit: '95'
+# ----- Line length -----
+ColumnLimit: '120'
 PenaltyBreakAssignment: '20'
 PenaltyBreakBeforeFirstCallParameter: '40'
 PenaltyBreakComment: '10'
@@ -20,8 +22,18 @@ PenaltyExcessCharacter: '1'
 PenaltyReturnTypeOnItsOwnLine: '15'
 ReflowComments: 'false'
 
-AlignAfterOpenBracket: 'Align'
+# ----- Macros -----
 AlignConsecutiveMacros: 'true'
+AttributeMacros: [ "__attribute__" ]
+ForEachMacros: []
+# IfMacros: []
+MacroBlockBegin: "^[sc]crBegin"
+MacroBlockEnd: "^[sc]cr(Finish|End)"
+StatementMacros:
+	- _test_modf
+
+# ----- Misc -----
+AlignAfterOpenBracket: 'Align'
 AlignConsecutiveAssignments: 'true'
 AlignConsecutiveDeclarations: 'true'
 AlignEscapedNewlines: Left
@@ -67,6 +79,7 @@ SpacesInContainerLiterals: 'false'
 SpacesInParentheses: 'false'
 SpacesInSquareBrackets: 'false'
 
+# ----- Includes -----
 SortIncludes: 'true'
 IncludeBlocks: Regroup
 IncludeIsMainRegex: '$'

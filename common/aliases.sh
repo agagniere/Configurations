@@ -1,6 +1,6 @@
 alias ls="ls --color"
-alias ll="ls -l"
-alias la="ls -la"
+alias ll="ls -l --human-readable"
+alias la="ll --all"
 
 alias clean="find . \( -name '*~' -o -name '#*#' -o -name '.swp' -o -name 'a.out' \) -print -delete"
 

@@ -40,7 +40,8 @@
  '(inhibit-startup-screen t)
  '(ispell-dictionary nil)
  '(package-selected-packages
-   '(catppuccin-theme badger-theme dockerfile-mode yaml-mode jsonnet-mode cmake-mode smart-tabs-mode smart-tab)))
+   '(glsl-mode gnu-elpa-keyring-update xpm svg-mode-line-themes anaconda-mode zig-mode gitlab-ci-mode typescript-mode markdown-mode nix-mode rust-mode catppuccin-theme badger-theme dockerfile-mode yaml-mode jsonnet-mode cmake-mode smart-tabs-mode smart-tab)))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -48,5 +49,17 @@
  ;; If there is more than one, they won't work right.
  )
 
+(font-lock-add-keywords 'c-mode
+ '(("\\<and\\>" . font-lock-keyword-face)
+   ("\\<or\\>" . font-lock-keyword-face)
+   ("\\<thread_local\\>" . font-lock-keyword-face)
+   ("\\<not\\>" . font-lock-keyword-face)))
+
 (require 'yaml-mode)
 (require 'jsonnet-mode)
+(require 'zig-mode)
+(require 'gitlab-ci-mode)
+(require 'markdown-mode)
+(require 'nix-mode)
+(require 'rust-mode)
+(require 'dockerfile-mode)

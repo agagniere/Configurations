@@ -1,6 +1,3 @@
-
-. ~/.cargo/env
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -11,6 +8,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH=$PATH:~/.local/go/bin:/usr/local/go/bin
+export PATH=~/.zig/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
 
-export EDITOR='emacs -nw'
+export EDITOR='emacs'

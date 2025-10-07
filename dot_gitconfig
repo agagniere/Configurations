@@ -1,6 +1,6 @@
 [user]
-	name = Antoine
-	email = angagnie@student.42.fr
+	name = Antoine Gagniere
+	email = antoine@gagniere.dev
 	username = agagniere
 [core]
 	editor = emacs -nw

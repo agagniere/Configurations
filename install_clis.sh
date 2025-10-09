@@ -1,5 +1,6 @@
 cargo install --git https://github.com/typst/typst.git --tag v0.13.1 typst-cli # --locked
 cargo install --git https://github.com/astral-sh/uv.git --tag 0.8.22 uv # --locked
+cargo install --git https://github.com/weezy20/zv --tag v0.3.1 --locked
 
 go install github.com/mikefarah/yq/v4@latest
 go install github.com/tomwright/dasel/v3/cmd/dasel@master

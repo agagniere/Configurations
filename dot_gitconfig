@@ -3,7 +3,7 @@
 	email = antoine@gagniere.dev
 	username = agagniere
 [core]
-	editor = emacs -nw
+	editor = emacs
 	autocrlf = input
 	pager = less -x1,5
 [help]

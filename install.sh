@@ -1,4 +1,6 @@
 # Setup datadog workspace
 
-ln -s dot_emacs ~/.emacs
-ln -s dot_vimrc ~/.vimrc
+location="$(dirname $0)"
+
+ln -s $location/dot_emacs ~/.emacs
+ln -s $location/dot_vimrc ~/.vimrc

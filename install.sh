@@ -2,5 +2,7 @@
 
 location="$(dirname $0)"
 
-ln -s $location/dot_emacs ~/.emacs
-ln -s $location/dot_vimrc ~/.vimrc
+ln --symbolic --relative $location/dot_emacs.el ~/.emacs
+ln --symbolic --relative $location/dot_vimrc ~/.vimrc
+
+./$location/seup_emacs.el

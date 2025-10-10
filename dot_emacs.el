@@ -55,7 +55,6 @@
 (require 'dockerfile-mode)
 (require 'gitlab-ci-mode)
 (require 'jsonnet-mode)
-(require 'markdown-mode)
 (require 'rust-mode)
 (require 'smart-tab)
 (require 'yaml-mode)
@@ -63,6 +62,7 @@
 
 (global-set-key (kbd "<f1>") 'clang-format-region)
 
+;;(require 'markdown-mode)
 ;;(require 'glsl-mode)
 ;;(require 'xpm)
 ;;(require 'svg-mode-line-themes)

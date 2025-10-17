@@ -1,6 +1,26 @@
-cargo install --git https://github.com/typst/typst.git --tag v0.13.1 typst-cli # --locked
-cargo install --git https://github.com/astral-sh/uv.git --tag 0.8.22 uv # --locked
-cargo install --git https://github.com/weezy20/zv --tag v0.3.1 --locked
+BOLD="\033[1m"
+EOC="\033[0m"
+
+function cargo_install_latest()
+{
+	local site=$1
+	local name=$2
+	local binary=$3
+
+	local url="https://$site/$name"
+	local tag=$(git ls-remote --tags $url | grep -E 'v?\d+[.]\d+[.]\d+$' --only-matching | sort -V | tail -1)
+	local command="cargo install --git $url --tag $tag $binary --locked"
+
+	echo ${BOLD}Going to install $name $binary version $tag ${EOC} Press ENTER to continue, CTRL+C to abort.
+	read -r
+	echo $command
+	eval $command
+}
+
+cargo_install_latest github.com typst/typst  typst-cli
+cargo_install_latest github.com astral-sh/uv uv
+cargo_install_latest github.com weezy20/zv
+cargo_install_latest github.com nushell/nushell nu
 
 go install github.com/mikefarah/yq/v4@latest
 go install github.com/tomwright/dasel/v3/cmd/dasel@master

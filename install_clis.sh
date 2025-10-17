@@ -6,21 +6,22 @@ function cargo_install_latest()
 	local site=$1
 	local name=$2
 	local binary=$3
+	local regex=${4:-'v?\d+[.]\d+[.]\d+$'}
 
 	local url="https://$site/$name"
-	local tag=$(git ls-remote --tags $url | grep -E 'v?\d+[.]\d+[.]\d+$' --only-matching | sort -V | tail -1)
+	local tag=$(git ls-remote --tags $url | grep -E $regex --only-matching | sort -V | tail -1)
 	local command="cargo install --git $url --tag $tag $binary --locked"
 
-	echo ${BOLD}Going to install $name $binary version $tag ${EOC} Press ENTER to continue, CTRL+C to abort.
+	echo ${BOLD}Going to install $name $binary version $tag ${EOC}Press ENTER to continue, CTRL+C to abort.
 	read -r
 	echo $command
 	eval $command
 }
 
 cargo_install_latest github.com typst/typst  typst-cli
-cargo_install_latest github.com astral-sh/uv uv
 cargo_install_latest github.com weezy20/zv
-cargo_install_latest github.com nushell/nushell nu
+cargo_install_latest github.com nushell/nushell nu '\d+[.]\d+[.]\d+$'
+cargo_install_latest github.com astral-sh/uv uv
 
 go install github.com/mikefarah/yq/v4@latest
 go install github.com/tomwright/dasel/v3/cmd/dasel@master

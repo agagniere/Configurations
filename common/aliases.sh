@@ -8,5 +8,6 @@ alias gits="git status"
 alias gitd="git diff"
 alias gitdc="git diff --cached"
 
+alias k="kubectl"
 alias e="emacs"
 alias wai="clear ; echo ; pwd ; echo ; ls"

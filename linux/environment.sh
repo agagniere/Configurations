@@ -9,6 +9,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export PATH=~/.zig/bin:$PATH
+export PATH=~/.zv/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 
 export EDITOR='emacs'

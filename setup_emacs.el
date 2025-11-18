@@ -22,7 +22,10 @@
      rust-mode
 	 smart-tab
 	 yaml-mode
-	 zig-mode)))
+	 zig-mode
+	 typst-ts-mode)))
 
 (package-refresh-contents)
 (package-install-selected-packages)
+
+(typst-ts-mc-install-grammar)

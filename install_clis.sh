@@ -37,6 +37,8 @@ cargo_install_latest github.com weezy20/zv
 cargo_install_latest github.com nushell/nushell nu '\d+[.]\d+[.]\d+$'
 cargo_install_latest github.com astral-sh/uv uv
 cargo_install_latest github.com bytecodealliance/wasmtime wasmtime-cli
+cargo_install_latest github.com bytecodealliance/wasm-tools
+cargo_install_latest github.com bytecodealliance/wit-bindgen
 cargo_install_latest github.com typstyle-rs/typstyle
 
 go_install_latest github.com/mikefarah/yq/v4 yq
@@ -47,3 +49,4 @@ go_install_latest github.com/google/go-jsonnet/cmd/jsonnet-lint
 go_install_latest github.com/google/go-jsonnet/cmd/jsonnetfmt
 go_install_latest github.com/google/go-jsonnet/cmd/jsonnet-deps
 go_install_latest github.com/go-delve/delve/cmd/dlv delve
+go_install_latest github.com/krzko/otelgen/cmd/otelgen

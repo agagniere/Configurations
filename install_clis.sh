@@ -26,11 +26,11 @@ function go_install_latest()
 {
 	local module=$1
 	local name=${2:-$(basename $module)}
-	local version=${4:-"latest"}
+	local version=${3:-"latest"}
 	local command="go install ${module}@${version}"
 
 	gum spin --spinner dot --title "[go] Installing $name $version" --show-output -- $command
-	gum log --time TimeOnly --level info $name
+	gum log --time TimeOnly --level info $name version $version
 }
 
 go install github.com/charmbracelet/gum@latest

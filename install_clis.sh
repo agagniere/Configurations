@@ -30,10 +30,11 @@ function go_install_latest()
 	local command="go install ${module}@${version}"
 
 	gum spin --spinner dot --title "[go] Installing $name $version" --show-output -- $command
-	gum log --time TimeOnly --level info $name version $version
+	gum log --time TimeOnly --structured --level info $name version $version
 }
 
 go install github.com/charmbracelet/gum@latest
+gum log --time TimeOnly --structured --level info gum version latest
 
 cargo_install_latest github.com typst/typst typst-cli
 cargo_install_latest github.com weezy20/zv

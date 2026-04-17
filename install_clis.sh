@@ -55,3 +55,5 @@ go_install_latest github.com/google/go-jsonnet/cmd/jsonnet-deps
 go_install_latest github.com/go-delve/delve/cmd/dlv delve
 go_install_latest github.com/krzko/otelgen/cmd/otelgen
 go_install_latest github.com/linuxerwang/goroutine-inspect goroutine-inspect master
+go_install_latest github.com/ahmetb/kubectx/cmd/kubens
+go_install_latest github.com/ahmetb/kubectx/cmd/kubectx
